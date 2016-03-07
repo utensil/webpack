@@ -1,6 +1,6 @@
-# vue-webpack-boilerplate
+# utensil/vue-webpack-boilerplate
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
+> A customized full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction based on [vuejs-templates/webpack](https://github.com/vuejs-templates/webpack).
 
 ### Usage
 
@@ -8,7 +8,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack my-project
+$ vue init utensil/webpack my-project
 $ cd my-project
 $ npm install
 $ npm run dev
