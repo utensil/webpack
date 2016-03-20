@@ -43,6 +43,14 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /\.css$/,
+        loader: 'style!css'
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style!css!sass'
+      },
+      {
         test: /\.json$/,
         loader: 'json'
       },
@@ -51,7 +59,7 @@ module.exports = {
         loader: 'vue-html'
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|ttf|woff|woff2|eot)(\?[^?]+)?$/,
         loader: 'url',
         query: {
           limit: 10000,
@@ -62,6 +70,7 @@ module.exports = {
   },
   plugins: [
     new webpack.ProvidePlugin({
+      '_': 'lodash',
       'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
     })
   ],
